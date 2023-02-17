@@ -59,17 +59,17 @@
                     <div class="card col-3 p-3">
                       <img width="80" height="160" src="images/parallelogram.png" class="card-img-top mt-3" alt="...">
                       <div class="card-body">
-                        <h5 class="card-title text-center fs-3">Parallelogram</h5>
+                        <h5 id="parallelogram-name" class="card-title text-center fs-3">Parallelogram</h5>
                         <p class="card-text text-center fs-4">Area (A) = b       h</p>
                         <div class="row">
-                            <input class="w-25 h-75 col-3" type="text" placeholder="b">
+                            <input id="parallelogram-b" class="w-25 h-75 col-3" type="text" placeholder="b">
                             <p class="col-3 fs-5">cm</p>
-                            <input class="col-3 w-25 h-75" type="text" placeholder="h">
+                            <input id="parallelogram-h" class="col-3 w-25 h-75" type="text" placeholder="h">
                             <p class="col-3 fs-5">cm</p>
                         </div>
                       </div>
                       <div class="text-center">
-                        <button class="btn btn-primary w-100">Calculate</button>
+                        <button id="parallelogram-btn" class="btn btn-primary w-100">Calculate</button>
                       </div>
                     </div>
                     <div class="card col-3">
@@ -79,9 +79,19 @@
                             <p id="triangle-result" class="col-4"></p>
                             <button class="col-4 btn btn-primary">convert</button>
                         </div>
-                        <div class="row pe-2 ">
+                        <div class="row pe-2 pb-3">
                             <p class="col-5">2. <span id="rectangle-name-set"></span> </p>
                             <p id="rectanagle-result" class="col-3"></p>
+                            <button class="col-4 btn btn-primary">convert</button>
+                        </div>
+                        <div class="row pe-2 pb-3">
+                            <p class="col-5">3. <span id="parallelogram-name-set"></span> </p>
+                            <p id="parallelogram-result" class="col-3"></p>
+                            <button class="col-4 btn btn-primary">convert</button>
+                        </div>
+                        <div class="row pe-2 pb-3">
+                            <p class="col-5">4. <span id="rhombus-name-set"></span> </p>
+                            <p id="rhombus-result" class="col-3"></p>
                             <button class="col-4 btn btn-primary">convert</button>
                         </div>
                       </div>
@@ -90,17 +100,17 @@
                     <div class="card col-3 p-3">
                       <img width="80" height="180" src="images/rhombus.png" class="card-img-top" alt="...">
                       <div class="card-body">
-                        <h5 class="card-title fs-3 text-center">Rhombus</h5>
+                        <h5 id="rhombus-name" class="card-title fs-3 text-center">Rhombus</h5>
                         <p class="card-text text-center fs-4">Area(A)=0.5xd1xd2</p>
                         <div class="row">
-                            <input class="w-25 h-75 col-3" type="text" placeholder="d1">
+                            <input id="rhombus-b" class="w-25 h-75 col-3" type="text" placeholder="d1">
                             <p class="col-3 fs-5">cm</p>
-                            <input class="col-3 w-25 h-75" type="text" placeholder="d2">
+                            <input id="rhombus-h" class="col-3 w-25 h-75" type="text" placeholder="d2">
                             <p class="col-3 fs-5">cm</p>
                         </div>
                       </div>
                       <div class="text-center">
-                        <button class="btn btn-primary w-100">Calculate</button>
+                        <button id="rhombus-btn" class="btn btn-primary w-100">Calculate</button>
                       </div>
                     </div>
 
