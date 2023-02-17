@@ -10,7 +10,7 @@
 </head>
 <body class="container-xxl">
     <header>
-        <nav class="navbar bg-body-tertiary">
+        <nav class="navbar bg-body-tertiary bg-info-subtle rounded-2">
             <div class="container-fluid">
               <a class="navbar-brand fs-5"><span class="fw-bold">Interactive</span><br> 
                 Geometry Genius</a>
@@ -18,24 +18,24 @@
             </div>
           </nav>
     </header>
-    <main>
-        <section class="container-xxl">
+    <main class="container-xxl pt-5">
+        <section>
             <div>
-                <div class="row ">
+                <div class="row">
                     <div class="card col-3 p-3">
                       <img width="80" height="180" src="images/triangle.png" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title fs-3 text-center">Rectangle</h5>
-                        <p class="card-text text-center fs-4">Area (A) = 0.5 x h</p>
+                        <p class="card-text text-center fs-4">Area (A) = 0.5 x b x h</p>
                         <div class="row">
-                            <input class="w-25 h-75 col-3" type="text" placeholder="b">
+                            <input id="triangle-b" class="w-25 h-75 col-3" type="text" placeholder="b">
                             <p class="col-3 fs-5">cm</p>
-                            <input class="col-3 w-25 h-75" type="text" placeholder="h">
+                            <input id="triangle-h" class="col-3 w-25 h-75" type="text" placeholder="h">
                             <p class="col-3 fs-5">cm</p>
                         </div>
                       </div>
                       <div class="text-center">
-                        <button class="btn btn-primary w-100">Calculate</button>
+                        <button id="triangle-btn" class="btn btn-primary w-100">Calculate</button>
                       </div>
                     </div>
 
@@ -55,7 +55,7 @@
                         <button class="btn btn-primary w-100">Calculate</button>
                       </div>
                     </div>
-                    
+
                     <div class="card col-3 p-3">
                       <img width="80" height="160" src="images/parallelogram.png" class="card-img-top mt-3" alt="...">
                       <div class="card-body">
@@ -74,13 +74,70 @@
                     </div>
                     <div class="card col-3">
                         <h3 class="text-center"><u>Aria Calculation</u></h3>
+                        <div class="row pe-2">
+                            <p class="col-4">1. <span id="triangle-name"></span> </p>
+                            <p id="triangle-result" class="col-4"></p>
+                            <button class="col-4 btn btn-primary">convert</button>
+                        </div>
                       </div>
-                  </div>
-            </div>
-            <div>
+                </div>
+                <div class="row py-5">
+                    <div class="card col-3 p-3">
+                      <img width="80" height="180" src="images/rhombus.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title fs-3 text-center">Rhombus</h5>
+                        <p class="card-text text-center fs-4">Area(A)=0.5xd1xd2</p>
+                        <div class="row">
+                            <input class="w-25 h-75 col-3" type="text" placeholder="d1">
+                            <p class="col-3 fs-5">cm</p>
+                            <input class="col-3 w-25 h-75" type="text" placeholder="d2">
+                            <p class="col-3 fs-5">cm</p>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <button class="btn btn-primary w-100">Calculate</button>
+                      </div>
+                    </div>
 
+                    <div class="card col-3 p-3">
+                      <img width="80" height="180" src="images/pentagon.png" class="card-img-top mt-4" style="height: 150px;" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title text-center fs-3">Pentagon</h5>
+                        <p class="card-text text-center fs-4">Area(A) = 0.5 x p x b</p>
+                        <div class="row">
+                            <input class="w-25 h-75 col-3" type="text" placeholder="p">
+                            <p class="col-3 fs-5">cm</p>
+                            <input class="col-3 w-25 h-75" type="text" placeholder="b">
+                            <p class="col-3 fs-5">cm</p>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <button class="btn btn-primary w-100">Calculate</button>
+                      </div>
+                    </div>
+
+                    <div class="card col-3 p-3">
+                      <img width="80" height="160" src="images/ellipse.png" class="card-img-top mt-3" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title text-center fs-3">Ellipse</h5>
+                        <p class="card-text text-center fs-4">Area (A) = πab</p>
+                        <div class="row">
+                            <input class="w-25 h-75 col-3" type="text" placeholder="a">
+                            <p class="col-3 fs-5">cm</p>
+                            <input class="col-3 w-25 h-75" type="text" placeholder="b">
+                            <p class="col-3 fs-5">cm</p>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <button class="btn btn-primary w-100">Calculate</button>
+                      </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+
+    <!-- javascript file added -->
+    <script src="js/geometry.js"></script>
 </body>
 </html>
