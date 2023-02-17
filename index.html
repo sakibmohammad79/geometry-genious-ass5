@@ -25,7 +25,7 @@
                     <div class="card col-3 p-3">
                       <img width="80" height="180" src="images/triangle.png" class="card-img-top" alt="...">
                       <div class="card-body">
-                        <h5 class="card-title fs-3 text-center">Rectangle</h5>
+                        <h5 id="triangle-name" class="card-title fs-3 text-center">Triangle</h5>
                         <p class="card-text text-center fs-4">Area (A) = 0.5 x b x h</p>
                         <div class="row">
                             <input id="triangle-b" class="w-25 h-75 col-3" type="text" placeholder="b">
@@ -42,17 +42,17 @@
                     <div class="card col-3 p-3">
                       <img width="80" height="180" src="images/rectangle.png" class="card-img-top mt-4" style="height: 150px;" alt="...">
                       <div class="card-body">
-                        <h5 class="card-title text-center fs-3">Rectangle</h5>
+                        <h5 id="rectangle-name" class="card-title text-center fs-3">Rectangle</h5>
                         <p class="card-text text-center fs-4">Area (A) = w       I</p>
                         <div class="row">
-                            <input class="w-25 h-75 col-3" type="text" placeholder="w">
+                            <input id="rectangle-w" class="w-25 h-75 col-3" type="text" placeholder="w">
                             <p class="col-3 fs-5">cm</p>
-                            <input class="col-3 w-25 h-75" type="text" placeholder="l">
+                            <input id="rectangle-l" class="col-3 w-25 h-75" type="text" placeholder="l">
                             <p class="col-3 fs-5">cm</p>
                         </div>
                       </div>
                       <div class="text-center">
-                        <button class="btn btn-primary w-100">Calculate</button>
+                        <button id="rectangle-btn" class="btn btn-primary w-100">Calculate</button>
                       </div>
                     </div>
 
@@ -74,9 +74,14 @@
                     </div>
                     <div class="card col-3">
                         <h3 class="text-center"><u>Aria Calculation</u></h3>
-                        <div class="row pe-2">
-                            <p class="col-4">1. <span id="triangle-name"></span> </p>
+                        <div class="row pe-2 pb-3">
+                            <p class="col-4">1. <span id="triangle-name-set"></span> </p>
                             <p id="triangle-result" class="col-4"></p>
+                            <button class="col-4 btn btn-primary">convert</button>
+                        </div>
+                        <div class="row pe-2 ">
+                            <p class="col-5">2. <span id="rectangle-name-set"></span> </p>
+                            <p id="rectanagle-result" class="col-3"></p>
                             <button class="col-4 btn btn-primary">convert</button>
                         </div>
                       </div>
