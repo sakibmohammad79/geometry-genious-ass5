@@ -22,11 +22,11 @@
         <section>
             <div>
                 <div class="row">
-                    <div class="card col-3 p-3">
-                      <img width="80" height="180" src="images/triangle.png" class="card-img-top" alt="...">
+                    <div class="card col-3 p-5">
+                      <img width="80" height="160" src="images/triangle.png" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 id="triangle-name" class="card-title fs-3 text-center">Triangle</h5>
-                        <p class="card-text text-center fs-4">Area (A) = 0.5 x b x h</p>
+                        <p class="card-text text-center fs-4">Area(A)=0.5xbxh</p>
                         <div class="row">
                             <input id="triangle-b" class="w-25 h-75 col-3" type="text" placeholder="b">
                             <p class="col-3 fs-5">cm</p>
@@ -39,11 +39,11 @@
                       </div>
                     </div>
 
-                    <div class="card col-3 p-3">
-                      <img width="80" height="180" src="images/rectangle.png" class="card-img-top mt-4" style="height: 150px;" alt="...">
+                    <div class="card col-3 p-5">
+                      <img width="80" height="160" src="images/rectangle.png" class="card-img-top mt-4" style="height: 150px;" alt="...">
                       <div class="card-body">
                         <h5 id="rectangle-name" class="card-title text-center fs-3">Rectangle</h5>
-                        <p class="card-text text-center fs-4">Area (A) = w       I</p>
+                        <p class="card-text text-center fs-4">Area (A) = w x I</p>
                         <div class="row">
                             <input id="rectangle-w" class="w-25 h-75 col-3" type="text" placeholder="w">
                             <p class="col-3 fs-5">cm</p>
@@ -56,11 +56,11 @@
                       </div>
                     </div>
 
-                    <div class="card col-3 p-3">
+                    <div class="card col-3 p-5">
                       <img width="80" height="160" src="images/parallelogram.png" class="card-img-top mt-3" alt="...">
                       <div class="card-body">
                         <h5 id="parallelogram-name" class="card-title text-center fs-3">Parallelogram</h5>
-                        <p class="card-text text-center fs-4">Area (A) = b       h</p>
+                        <p class="card-text text-center fs-4">Area (A) = b x h</p>
                         <div class="row">
                             <input id="parallelogram-b" class="w-25 h-75 col-3" type="text" placeholder="b">
                             <p class="col-3 fs-5">cm</p>
@@ -76,32 +76,42 @@
                         <h3 class="text-center"><u>Aria Calculation</u></h3>
                         <div class="row pe-2 pb-3">
                             <p class="col-4">1. <span id="triangle-name-set"></span> </p>
-                            <p id="triangle-result" class="col-4"></p>
+                            <p class="col-4"><span id="triangle-result"></span>cm<sup>2</sup></p>
                             <button class="col-4 btn btn-primary">convert</button>
                         </div>
                         <div class="row pe-2 pb-3">
-                            <p class="col-5">2. <span id="rectangle-name-set"></span> </p>
-                            <p id="rectanagle-result" class="col-3"></p>
+                            <p class="col-4">2.<span id="rectangle-name-set"></span> </p>
+                            <p class="col-4"><span id="rectanagle-result"></span>cm<sup>2</sup></p>
                             <button class="col-4 btn btn-primary">convert</button>
                         </div>
                         <div class="row pe-2 pb-3">
-                            <p class="col-5">3. <span id="parallelogram-name-set"></span> </p>
-                            <p id="parallelogram-result" class="col-3"></p>
+                            <p class="col-4">3.<span id="parallelogram-name-set"></span></p>
+                            <p class="col-4"><span id="parallelogram-result"></span>cm<sup>2</sup></p>
                             <button class="col-4 btn btn-primary">convert</button>
                         </div>
                         <div class="row pe-2 pb-3">
-                            <p class="col-5">4. <span id="rhombus-name-set"></span> </p>
-                            <p id="rhombus-result" class="col-3"></p>
+                            <p class="col-4">4.<span id="rhombus-name-set"></span> </p>
+                            <p class="col-4"><span id="rhombus-result"></span>cm<sup>2</sup></p>
+                            <button class="col-4 btn btn-primary">convert</button>
+                        </div>
+                        <div class="row pe-2 pb-3">
+                            <p class="col-4">5.<span id="pentagon-name-set"></span> </p>
+                            <p class="col-4"><span id="pentagon-result"></span>cm<sup>2</sup></p>
+                            <button class="col-4 btn btn-primary">convert</button>
+                        </div>
+                        <div class="row pe-2 pb-3">
+                            <p class="col-4">6.<span id="ellips-name-set"></span> </p>
+                            <p class="col-4"> <span id="ellips-result"></span>cm<sup>2</sup></p>
                             <button class="col-4 btn btn-primary">convert</button>
                         </div>
                       </div>
                 </div>
                 <div class="row py-5">
-                    <div class="card col-3 p-3">
-                      <img width="80" height="180" src="images/rhombus.png" class="card-img-top" alt="...">
+                    <div class="card col-3 p-5">
+                      <img width="80" height="160" src="images/rhombus.png" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 id="rhombus-name" class="card-title fs-3 text-center">Rhombus</h5>
-                        <p class="card-text text-center fs-4">Area(A)=0.5xd1xd2</p>
+                        <p class="card-text text-center fs-4">Area(A)=0.5xd<sub>1</sub>xd<sub>2</sub></p>
                         <div class="row">
                             <input id="rhombus-b" class="w-25 h-75 col-3" type="text" placeholder="d1">
                             <p class="col-3 fs-5">cm</p>
@@ -114,37 +124,37 @@
                       </div>
                     </div>
 
-                    <div class="card col-3 p-3">
-                      <img width="80" height="180" src="images/pentagon.png" class="card-img-top mt-4" style="height: 150px;" alt="...">
+                    <div class="card col-3 p-5">
+                      <img width="80" height="160" src="images/pentagon.png" class="card-img-top mt-4" style="height: 150px;" alt="...">
                       <div class="card-body">
-                        <h5 class="card-title text-center fs-3">Pentagon</h5>
-                        <p class="card-text text-center fs-4">Area(A) = 0.5 x p x b</p>
+                        <h5 id="pentagon-name" class="card-title text-center fs-3">Pentagon</h5>
+                        <p class="card-text text-center fs-4">Area(A)=0.5xpxb</p>
                         <div class="row">
-                            <input class="w-25 h-75 col-3" type="text" placeholder="p">
+                            <input id="pentagon-p" class="w-25 h-75 col-3" type="text" placeholder="p">
                             <p class="col-3 fs-5">cm</p>
-                            <input class="col-3 w-25 h-75" type="text" placeholder="b">
+                            <input id="pentagon-b" class="col-3 w-25 h-75" type="text" placeholder="b">
                             <p class="col-3 fs-5">cm</p>
                         </div>
                       </div>
                       <div class="text-center">
-                        <button class="btn btn-primary w-100">Calculate</button>
+                        <button id="pentagon-btn" class="btn btn-primary w-100">Calculate</button>
                       </div>
                     </div>
 
-                    <div class="card col-3 p-3">
+                    <div class="card col-3 p-5">
                       <img width="80" height="160" src="images/ellipse.png" class="card-img-top mt-3" alt="...">
                       <div class="card-body">
-                        <h5 class="card-title text-center fs-3">Ellipse</h5>
-                        <p class="card-text text-center fs-4">Area (A) = πab</p>
+                        <h5 id="ellips-name" class="card-title text-center fs-3">Ellipse</h5>
+                        <p class="card-text text-center fs-4">Area(A) = πab</p>
                         <div class="row">
-                            <input class="w-25 h-75 col-3" type="text" placeholder="a">
+                            <input id="ellips-a" class="w-25 h-75 col-3" type="text" placeholder="a">
                             <p class="col-3 fs-5">cm</p>
-                            <input class="col-3 w-25 h-75" type="text" placeholder="b">
+                            <input id="ellips-b" class="col-3 w-25 h-75" type="text" placeholder="b">
                             <p class="col-3 fs-5">cm</p>
                         </div>
                       </div>
                       <div class="text-center">
-                        <button class="btn btn-primary w-100">Calculate</button>
+                        <button id="ellips-btn" class="btn btn-primary w-100">Calculate</button>
                       </div>
                     </div>
                 </div>

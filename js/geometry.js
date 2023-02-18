@@ -19,12 +19,13 @@ document.getElementById('triangle-btn').addEventListener('click', function(){
     else{
         const triangleResult = 0.5 * triangleBaseValue * trianglehightValue;
 
-    const triangleResultSet = document.getElementById('triangle-result');
-    triangleResultSet.innerText = triangleResult;
+        const triangleResultSet = document.getElementById('triangle-result');
+    triangleResultSet.innerText = triangleResult.toFixed(2);
 
     const triangleName = textFieldValue('triangle-name');
     const triangleNameSet = document.getElementById('triangle-name-set');
     triangleNameSet.innerText = triangleName;
+    
     }
 })
 // triangle calculation end here
@@ -39,7 +40,7 @@ document.getElementById('rectangle-btn').addEventListener('click', function(){
         const rectangleResult = rectangleWidthValue * rectanglelengthValue;
 
     const rectangleResultSet = document.getElementById('rectanagle-result');
-    rectangleResultSet.innerText = rectangleResult;
+    rectangleResultSet.innerText = rectangleResult.toFixed(2);
 
     const rectangleName = textFieldValue('rectangle-name');
     const rectangleNameSet = document.getElementById('rectangle-name-set');
@@ -58,7 +59,7 @@ document.getElementById('parallelogram-btn').addEventListener('click', function(
         const parallelogramResult = ParallelogramBaseValue * ParallelogramhightValue;
 
     const parallelogramResultSet = document.getElementById('parallelogram-result');
-    parallelogramResultSet.innerText = parallelogramResult;
+    parallelogramResultSet.innerText = parallelogramResult.toFixed(2);
 
     const parallelogramName = textFieldValue('parallelogram-name');
     const parallelogramNameSet = document.getElementById('parallelogram-name-set');
@@ -74,10 +75,10 @@ document.getElementById('rhombus-btn').addEventListener('click', function(){
         alert('Please Enter the valid value');
     }
     else{
-        const rhombusResult = 0.5*(rhombusD1Value * rhombusD1Value);
+        const rhombusResult = 0.5 * rhombusD1Value * rhombusD1Value;
 
     const rhombusResultSet = document.getElementById('rhombus-result');
-    rhombusResultSet.innerText = rhombusResult;
+    rhombusResultSet.innerText = rhombusResult.toFixed(2);
 
     const rhombusName = textFieldValue('rhombus-name');
     const rhombusNameSet = document.getElementById('rhombus-name-set');
@@ -85,3 +86,41 @@ document.getElementById('rhombus-btn').addEventListener('click', function(){
     }
 })
 //Parallelogram calculation end here
+//Pentagon calculation start here
+document.getElementById('pentagon-btn').addEventListener('click', function(){
+    const pentagonPValue = inputFieldValue('pentagon-p');
+    const pentagonBValue = inputFieldValue('pentagon-b');
+    if(isNaN(pentagonPValue) || pentagonPValue <= 0 || isNaN(pentagonBValue) || pentagonBValue <= 0 ){
+        alert('Please Enter the valid value');
+    }
+    else{
+        const pentagonResult = 0.5*(pentagonPValue * pentagonBValue);
+
+    const pentagonResultSet = document.getElementById('pentagon-result');
+    pentagonResultSet.innerText = pentagonResult.toFixed(2);
+
+    const pentagonName = textFieldValue('pentagon-name');
+    const pentagonNameSet = document.getElementById('pentagon-name-set');
+    pentagonNameSet.innerText = pentagonName;
+    }
+})
+//Pentagon calculation end here
+//Ellips calculation start here
+document.getElementById('ellips-btn').addEventListener('click', function(){
+    const ellipsAValue = inputFieldValue('ellips-a');
+    const ellipsBValue = inputFieldValue('ellips-b');
+    if(isNaN(ellipsAValue) || ellipsAValue <= 0 || isNaN(ellipsBValue) || ellipsBValue <= 0 ){
+        alert('Please Enter the valid value');
+    }
+    else{
+        const ellipsResult = 3.14*(ellipsAValue * ellipsBValue);
+
+    const ellipsResultSet = document.getElementById('ellips-result');
+    ellipsResultSet.innerText = ellipsResult.toFixed(2);
+
+    const ellipsName = textFieldValue('ellips-name');
+    const ellipsNameSet = document.getElementById('ellips-name-set');
+    ellipsNameSet.innerText = ellipsName;
+    }
+})
+//Ellips calculation end here
