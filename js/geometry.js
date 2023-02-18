@@ -124,7 +124,65 @@ document.getElementById('ellips-btn').addEventListener('click', function(){
     }
 })
 //Ellips calculation end here
-const cardId = document.getElementById('card1').addEventListener('mouseenter', function(){
-    
-})
+const getColor1=() => {
+    const randomNumber = Math.floor(Math.random()*16777215);
+    const randomCode = "#"+randomNumber.toString(16);
+    const cards = document.getElementById('card-1');
+    cards.style.backgroundColor = randomCode;
+}
+const getColor2=() => {
+    const randomNumber = Math.floor(Math.random()*16777215);
+    const randomCode = "#"+randomNumber.toString(16);
+    const cards = document.getElementById('card-2');
+    cards.style.backgroundColor = randomCode;
+}
+const getColor3=() => {
+    const randomNumber = Math.floor(Math.random()*16777215);
+    const randomCode = "#"+randomNumber.toString(16);
+    const cards = document.getElementById('card-3');
+    cards.style.backgroundColor = randomCode;
+}
+const getColor4=() => {
+    const randomNumber = Math.floor(Math.random()*16777215);
+    const randomCode = "#"+randomNumber.toString(16);
+    const cards = document.getElementById('card-4');
+    cards.style.backgroundColor = randomCode;
+}
+const getColor5=() => {
+    const randomNumber = Math.floor(Math.random()*16777215);
+    const randomCode = "#"+randomNumber.toString(16);
+    const cards = document.getElementById('card-5');
+    cards.style.backgroundColor = randomCode;
+}
+const getColor6=() => {
+    const randomNumber = Math.floor(Math.random()*16777215);
+    const randomCode = "#"+randomNumber.toString(16);
+    const cards = document.getElementById('card-6');
+    cards.style.backgroundColor = randomCode;
+}
+document.getElementById('card-1').addEventListener(
+    "mouseenter",
+    getColor1
+)
+document.getElementById('card-2').addEventListener(
+    "mouseenter",
+    getColor2
+)
+document.getElementById('card-3').addEventListener(
+    "mouseenter",
+    getColor3
+)
+document.getElementById('card-4').addEventListener(
+    "mouseenter",
+    getColor4
+)
+document.getElementById('card-5').addEventListener(
+    "mouseenter",
+    getColor5
+)
+document.getElementById('card-6').addEventListener(
+    "mouseenter",
+    getColor6
+)
+
 
