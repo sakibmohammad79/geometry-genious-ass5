@@ -124,3 +124,7 @@ document.getElementById('ellips-btn').addEventListener('click', function(){
     }
 })
 //Ellips calculation end here
+const cardId = document.getElementById('card1').addEventListener('mouseenter', function(){
+    
+})
+

@@ -14,15 +14,15 @@
             <div class="container-fluid">
               <a class="navbar-brand fs-5"><span class="fw-bold">Interactive</span><br> 
                 Geometry Genius</a>
-                <button class="btn btn-outline-success" type="submit">Blog</button>
+                <button class="btn btn-outline-success" type="menu"><a style="text-decoration: none;" href="http://127.0.0.1:5500/blog.html" target="_blank">Blog</a></button>
             </div>
           </nav>
     </header>
     <main class="container-xxl pt-5">
         <section>
             <div>
-                <div class="row">
-                    <div class="card col-3 p-5">
+                <div class="row ">
+                    <div id="card-1" class="card card1 col-3 p-5">
                       <img width="80" height="160" src="images/triangle.png" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 id="triangle-name" class="card-title fs-3 text-center">Triangle</h5>
@@ -39,7 +39,7 @@
                       </div>
                     </div>
 
-                    <div class="card col-3 p-5">
+                    <div class="card col-3 p-5 card1">
                       <img width="80" height="160" src="images/rectangle.png" class="card-img-top mt-4" style="height: 150px;" alt="...">
                       <div class="card-body">
                         <h5 id="rectangle-name" class="card-title text-center fs-3">Rectangle</h5>
@@ -77,32 +77,32 @@
                         <div class="row pe-2 pb-3">
                             <p class="col-4">1. <span id="triangle-name-set"></span> </p>
                             <p class="col-4"><span id="triangle-result"></span>cm<sup>2</sup></p>
-                            <button class="col-4 btn btn-primary">convert</button>
+                            <button class="col-4 btn btn-primary">convert to m<sup>2</sup></button>
                         </div>
                         <div class="row pe-2 pb-3">
                             <p class="col-4">2.<span id="rectangle-name-set"></span> </p>
                             <p class="col-4"><span id="rectanagle-result"></span>cm<sup>2</sup></p>
-                            <button class="col-4 btn btn-primary">convert</button>
+                            <button class="col-4 btn btn-primary">convert to m<sup>2</sup></button>
                         </div>
                         <div class="row pe-2 pb-3">
-                            <p class="col-4">3.<span id="parallelogram-name-set"></span></p>
-                            <p class="col-4"><span id="parallelogram-result"></span>cm<sup>2</sup></p>
-                            <button class="col-4 btn btn-primary">convert</button>
+                            <p class="col-5">3.<span id="parallelogram-name-set"></span></p>
+                            <p class="col-3 row-2"><span id="parallelogram-result"></span>cm<sup>2</sup></p>
+                            <button class="col-4 btn btn-primary">convert to m<sup>2</sup></button>
                         </div>
                         <div class="row pe-2 pb-3">
                             <p class="col-4">4.<span id="rhombus-name-set"></span> </p>
                             <p class="col-4"><span id="rhombus-result"></span>cm<sup>2</sup></p>
-                            <button class="col-4 btn btn-primary">convert</button>
+                            <button class="col-4 btn btn-primary">convert to m<sup>2</sup></button>
                         </div>
                         <div class="row pe-2 pb-3">
                             <p class="col-4">5.<span id="pentagon-name-set"></span> </p>
                             <p class="col-4"><span id="pentagon-result"></span>cm<sup>2</sup></p>
-                            <button class="col-4 btn btn-primary">convert</button>
+                            <button class="col-4 btn btn-primary">convert to m<sup>2</sup></button>
                         </div>
                         <div class="row pe-2 pb-3">
                             <p class="col-4">6.<span id="ellips-name-set"></span> </p>
                             <p class="col-4"> <span id="ellips-result"></span>cm<sup>2</sup></p>
-                            <button class="col-4 btn btn-primary">convert</button>
+                            <button class="col-4 btn btn-primary">convert to m<sup>2</sup></button>
                         </div>
                       </div>
                 </div>
