@@ -185,4 +185,9 @@ document.getElementById('card-6').addEventListener(
     getColor6
 )
 
+//blog btn 
+document.getElementById('blog-btn').addEventListener('click', function(){
+    window.location.href = 'blog.html'
+})
+
 
